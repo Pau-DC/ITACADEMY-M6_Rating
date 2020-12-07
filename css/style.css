@@ -1,0 +1,69 @@
+/* GENERAL */
+body{
+  background-color: #a1a1a1;
+}
+
+
+.content{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+.rate{
+  display: inline-block;
+}
+
+.rate{
+  height: 100%;
+  margin-right: -10px;
+}
+
+.star{
+  width: 100px;
+}
+
+svg.star{
+  stroke:rgb(243, 220, 13);
+  stroke-width:10;
+  stroke-linejoin: round;
+}
+.star:hover{
+  cursor: pointer;
+  animation-name: star-mouse-over;
+  animation-duration: 1s;
+  filter: drop-shadow(0 0 20px rgb(243, 220, 13));
+}
+
+.filled{
+  fill: rgb(243, 220, 13); 
+}
+
+.clean{
+
+  fill:none;
+}
+
+#rate-text{
+  display: block;
+  color: rgb(243, 220, 13);
+  font-size: 45px;
+}
+
+
+
+/* animations */
+@keyframes star-mouse-over{
+  from{ filter: drop-shadow(0 0 0 rgb(243, 220, 13)) }
+  to{ filter: drop-shadow(0 0 20px rgb(243, 220, 13)) }
+}
